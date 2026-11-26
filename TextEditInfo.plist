@@ -12,6 +12,32 @@
 	"Copyright \U00a9 2001-2003 Dusk to Dawn Computing, Inc."
     );
     CopyrightDescription = "You may freely copy, distribute, and reuse the code in this example.";
+    /* The types TextEdit opens, as GNUstep's workspace reads them: files
+       of these extensions open in TextEdit and show its document icons.
+       NSExtensions below is NeXT's older form, kept for other systems. */
+    NSTypes = (
+	{
+	    NSName = "Plain text";
+	    NSHumanReadableName = "Plain text document";
+	    NSUnixExtensions = (txt, text, md, markdown, log, csv, tsv, conf, cfg, ini);
+	    NSIcon = text.tiff;
+	    NSRole = Editor;
+	},
+	{
+	    NSName = RTF;
+	    NSHumanReadableName = "Rich text document";
+	    NSUnixExtensions = (rtf);
+	    NSIcon = rtf.tiff;
+	    NSRole = Editor;
+	},
+	{
+	    NSName = RTFD;
+	    NSHumanReadableName = "Rich text document with attachments";
+	    NSUnixExtensions = (rtfd);
+	    NSIcon = rtfd.tiff;
+	    NSRole = Editor;
+	}
+    );
     NSExtensions = {
 //	"" = {
 //	    NSIcon = text.tiff;
